@@ -12,5 +12,5 @@ struct CardModel: Identifiable {
     var id = UUID()
     var suite: Suite
     var number: Int
-    var selected = false
+    var played = false
 }

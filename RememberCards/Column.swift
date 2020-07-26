@@ -9,18 +9,23 @@
 import SwiftUI
 
 struct Column: View {
+
+    @EnvironmentObject var store: CardStore
+
     var suite: Suite
 
     var body: some View {
         ZStack(alignment: .top) {
 
-            ForEach(CardStore.shared.spades) { card in
-                if !card.selected {
+            ForEach(store.getColumn(for: suite)) { card in
+                if !card.played {
                     Card(suite: card.suite, number: card.number)
                 }
             }
         }
     }
+
+
 }
 
 struct Column_Previews: PreviewProvider {

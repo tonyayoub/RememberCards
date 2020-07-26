@@ -9,7 +9,7 @@
 import SwiftUI
 import Introspect
 
-enum Suite: String {
+enum Suite: String, CaseIterable {
     case spades = "Spades"
     case hearts = "Hearts"
     case diamonds = "Diamonds"
@@ -17,6 +17,9 @@ enum Suite: String {
 }
 
 struct Card: View {
+
+    @EnvironmentObject var store: CardStore
+
     var suite: Suite
     var number: Int
 
@@ -24,19 +27,16 @@ struct Card: View {
         return "\(suite.rawValue)_\(number)"
     }
 
-    @State private var selected = false
-
     var body: some View {
         Button(action: {
             print("Card \(self.number) tapped")
-            self.selected = true
+            self.store.select(suite: self.suite, number: self.number)
+
         }) {
             Image(imageFileName)
                 .resizable().aspectRatio(contentMode: .fit)
-                .opacity(selected ? 0.0 : 1.0)
         }
         .offset(y: Dimensions.screenHeight * CGFloat(number - 2))
-    .disabled(selected)
 
     }
 }
