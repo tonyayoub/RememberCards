@@ -3,19 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC6012FF73F97314BDD9975C /* Pods_RememberCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5817F17C3EDE069793DFCD6E /* Pods_RememberCards.framework */; };
+		F8474A1B24CD99BE00174333 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8474A1A24CD99BE00174333 /* CardModel.swift */; };
+		F8474A1D24CD99F200174333 /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8474A1C24CD99F200174333 /* CardStore.swift */; };
+		F84BFCDC24CD613500776B16 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BFCDB24CD613500776B16 /* Card.swift */; };
+		F84BFCDE24CD7FA100776B16 /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BFCDD24CD7FA100776B16 /* Column.swift */; };
+		F84BFCE024CD8DCE00776B16 /* Dimentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BFCDF24CD8DCE00776B16 /* Dimentions.swift */; };
 		F8FE07F624CCADBC00D21C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE07F524CCADBC00D21C15 /* AppDelegate.swift */; };
 		F8FE07F824CCADBC00D21C15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE07F724CCADBC00D21C15 /* SceneDelegate.swift */; };
 		F8FE07FA24CCADBC00D21C15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE07F924CCADBC00D21C15 /* ContentView.swift */; };
 		F8FE07FC24CCADBF00D21C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FE07FB24CCADBF00D21C15 /* Assets.xcassets */; };
 		F8FE07FF24CCADBF00D21C15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8FE07FE24CCADBF00D21C15 /* Preview Assets.xcassets */; };
 		F8FE080224CCADBF00D21C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8FE080024CCADBF00D21C15 /* LaunchScreen.storyboard */; };
+		F8FE080A24CD3FCF00D21C15 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE080924CD3FCF00D21C15 /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5817F17C3EDE069793DFCD6E /* Pods_RememberCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RememberCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83902B8E67400437DF83902F /* Pods-RememberCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberCards.debug.xcconfig"; path = "Target Support Files/Pods-RememberCards/Pods-RememberCards.debug.xcconfig"; sourceTree = "<group>"; };
+		BE4B57F2F5A5F2CEC96652CD /* Pods-RememberCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberCards.release.xcconfig"; path = "Target Support Files/Pods-RememberCards/Pods-RememberCards.release.xcconfig"; sourceTree = "<group>"; };
+		F8474A1A24CD99BE00174333 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		F8474A1C24CD99F200174333 /* CardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStore.swift; sourceTree = "<group>"; };
+		F84BFCDB24CD613500776B16 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F84BFCDD24CD7FA100776B16 /* Column.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
+		F84BFCDF24CD8DCE00776B16 /* Dimentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimentions.swift; sourceTree = "<group>"; };
 		F8FE07F224CCADBC00D21C15 /* RememberCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FE07F524CCADBC00D21C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8FE07F724CCADBC00D21C15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +39,7 @@
 		F8FE07FE24CCADBF00D21C15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8FE080124CCADBF00D21C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8FE080324CCADBF00D21C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8FE080924CD3FCF00D21C15 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6012FF73F97314BDD9975C /* Pods_RememberCards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42C360E40FA6D7B493327BAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5817F17C3EDE069793DFCD6E /* Pods_RememberCards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77F542383031BE217FECBC4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83902B8E67400437DF83902F /* Pods-RememberCards.debug.xcconfig */,
+				BE4B57F2F5A5F2CEC96652CD /* Pods-RememberCards.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F8FE07E924CCADBC00D21C15 = {
 			isa = PBXGroup;
 			children = (
 				F8FE07F424CCADBC00D21C15 /* RememberCards */,
 				F8FE07F324CCADBC00D21C15 /* Products */,
+				77F542383031BE217FECBC4C /* Pods */,
+				42C360E40FA6D7B493327BAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +99,12 @@
 				F8FE080024CCADBF00D21C15 /* LaunchScreen.storyboard */,
 				F8FE080324CCADBF00D21C15 /* Info.plist */,
 				F8FE07FD24CCADBF00D21C15 /* Preview Content */,
+				F8FE080924CD3FCF00D21C15 /* Board.swift */,
+				F84BFCDB24CD613500776B16 /* Card.swift */,
+				F84BFCDD24CD7FA100776B16 /* Column.swift */,
+				F84BFCDF24CD8DCE00776B16 /* Dimentions.swift */,
+				F8474A1A24CD99BE00174333 /* CardModel.swift */,
+				F8474A1C24CD99F200174333 /* CardStore.swift */,
 			);
 			path = RememberCards;
 			sourceTree = "<group>";
@@ -82,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8FE080624CCADBF00D21C15 /* Build configuration list for PBXNativeTarget "RememberCards" */;
 			buildPhases = (
+				A89169F3841921BA5384BB2F /* [CP] Check Pods Manifest.lock */,
 				F8FE07EE24CCADBC00D21C15 /* Sources */,
 				F8FE07EF24CCADBC00D21C15 /* Frameworks */,
 				F8FE07F024CCADBC00D21C15 /* Resources */,
+				392702462C058EF4EACCCFAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +185,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		392702462C058EF4EACCCFAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RememberCards/Pods-RememberCards-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RememberCards/Pods-RememberCards-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RememberCards/Pods-RememberCards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A89169F3841921BA5384BB2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RememberCards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8FE07EE24CCADBC00D21C15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,7 +234,13 @@
 			files = (
 				F8FE07F624CCADBC00D21C15 /* AppDelegate.swift in Sources */,
 				F8FE07F824CCADBC00D21C15 /* SceneDelegate.swift in Sources */,
+				F84BFCDC24CD613500776B16 /* Card.swift in Sources */,
+				F8FE080A24CD3FCF00D21C15 /* Board.swift in Sources */,
 				F8FE07FA24CCADBC00D21C15 /* ContentView.swift in Sources */,
+				F8474A1B24CD99BE00174333 /* CardModel.swift in Sources */,
+				F8474A1D24CD99F200174333 /* CardStore.swift in Sources */,
+				F84BFCE024CD8DCE00776B16 /* Dimentions.swift in Sources */,
+				F84BFCDE24CD7FA100776B16 /* Column.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +374,7 @@
 		};
 		F8FE080724CCADBF00D21C15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83902B8E67400437DF83902F /* Pods-RememberCards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +395,7 @@
 		};
 		F8FE080824CCADBF00D21C15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE4B57F2F5A5F2CEC96652CD /* Pods-RememberCards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
